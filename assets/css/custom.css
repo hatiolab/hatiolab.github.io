@@ -1,0 +1,85 @@
+/* Add here all your css styles (customizations) */
+*{font-family: "Noto Sans KR", "Nanum Gothic", "dotum", '돋움', sans-serif !important;}
+ul,ol{
+  list-style:none;
+  margin:0;padding:0
+}
+.revolution-mch-1 .tp-caption span{
+  color:#993333;
+  font-size:28px;
+  font-weight:bold;
+}
+.scene2-text1{
+  font-size:60px;
+  color:#665752;
+  letter-spacing:-4px;
+  text-shadow:1px 2px 4px rgba(0, 0, 0, .2)
+}
+.scene2-text1 strong{
+  color:#8c6759
+}
+.scene2-text2{
+  color:#53656a;
+  font-size:16px;
+  line-height:1.4
+}
+.scene3-text2,.scene5-text2{
+  text-align:right !important
+}
+.scene5-text2{
+  margin-right:-15px !important
+}
+.scene5-text1{
+  font-size:60px;
+  text-shadow:1px 2px 4px rgba(0, 0, 0, .2)
+}
+.scene-textBtn,.default-btn{
+  background-color:rgba(207,69,69,.9) !important;
+  border:none !important;
+  padding:4px 12px 5px 12px !important;
+  color:#fff;
+  -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+}
+.featureVodDisc{
+  padding:10px 0;
+  font-size:16px;
+  line-height:1.7;
+}
+.featureVodDisc strong{
+  color:rgba(207,69,69,.8);
+  letter-spacing:-2px;
+  font-size:32px;
+  font-weight:normal;;
+}
+ul.keyfeature{
+  display:block;
+  margin:12px 0 0 0
+}
+ul.keyfeature li{
+  padding-bottom:9px;
+  font-size:13px;
+}
+ul.keyfeature li::before{
+  content:'';
+  width:9px;height:9px;
+  position:relative;
+  display:inline-block;
+  margin-right:5px;
+  border:2px solid rgba(207,69,69,.5);
+}
+.focusColor{
+  color:#e75e5e;
+  font-size:20px
+}
+.focusColor1{
+  color:#aaa;
+  font-size:16px;
+}
+.carousel-arrow .carousel-control{
+  opacity:.3;
+  font-weight:100;
+  color:#fff
+}
+.carousel-arrow .carousel-control:hover{
+  opacity:1
+}
