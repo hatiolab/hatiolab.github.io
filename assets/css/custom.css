@@ -83,3 +83,22 @@ ul.keyfeature li::before{
 .carousel-arrow .carousel-control:hover{
   opacity:1
 }
+
+.customNavigation{
+  display:none
+}
+@media (max-width: 1015px) {
+	.customNavigation{
+		display:block
+	}
+}
+
+.customNavigation  .owl-btn.prev{
+  padding-left:6px;
+  font-family:'Tahoma' !important;
+  text-decoration:none;
+}
+.customNavigation  .owl-btn.next{
+  padding-left:8px;
+  font-family:'Tahoma' !important;
+}
