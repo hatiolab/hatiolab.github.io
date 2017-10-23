@@ -132,3 +132,6 @@ ul.keyfeature li::before{
   font-size:18px;
   line-height:1.7
 }
+.cover-img-container img{
+  width:100%
+}
