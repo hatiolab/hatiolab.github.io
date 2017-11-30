@@ -170,3 +170,24 @@ ul.keyfeature li::before{
   margin-bottom:2px;
   font-size:11px;
 }
+.our-clients li{
+  width:150px;
+}
+.our-clients figure img{
+  padding:3px 10px;
+  width:initial;
+}
+.our-clients figure .img-hover{
+  background-color:#d14a4c !important;
+  line-height:1.3 !important;
+}
+.our-clients figure .img-hover h4{
+  line-height:1.3 !important;
+  margin:15px auto 0 auto;
+  display:block !important;
+}
+.our-clients figure .img-hover a{
+  display:block !important;
+  color:rgba(255,255,255,.5);
+  font-size:11px;
+}
