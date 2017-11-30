@@ -148,3 +148,25 @@ ul.keyfeature li::before{
 .contact hr{
   margin:15px 0
 }
+.redBar{
+  background-color:#d14a4c;
+  padding:20px;
+  color:#fff;
+}
+.redBar h1{
+  font-weight:bold;
+  color:#fff
+}
+.thumbnail-cell .thumbnails{
+  border:1px solid rgba(0,0,0,.05);
+}
+.thumbnail-cell h3{
+  margin:0 0 1px 0
+}
+.thumbnail-cell h3 a{
+  font-size:15px;
+}
+.thumbnail-cell .caption p{
+  margin-bottom:2px;
+  font-size:11px;
+}
