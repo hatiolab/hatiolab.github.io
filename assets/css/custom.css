@@ -145,3 +145,6 @@ ul.keyfeature li::before{
   color:rgba(207,69,69,1);
   font-weight:bold
 }
+.contact hr{
+  margin:15px 0
+}
