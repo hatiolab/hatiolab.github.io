@@ -191,3 +191,49 @@ ul.keyfeature li::before{
   color:rgba(255,255,255,.5);
   font-size:11px;
 }
+.labelArch img,.labelscreen img{
+  max-width:100%;
+}
+.labelscreen img{
+  width:800px !important;
+  max-width:100%;
+  border:3px solid #999;
+  margin:auto;margin-bottom:15px;
+}
+.labelscreen.content-md{
+  padding-top:0
+}
+.labelscreen.content-md div.item{
+  text-align:center
+}
+.labelscreen .owl-controls{
+  position: relative;
+  margin:auto;
+  width:70%;
+  top:-50px;
+}
+.labelscreen .owl-controls .fa-chevron-left:before{
+  content:"<";
+  display:block;
+  border-radius:50%;
+  border:1px solid #999;
+  width:25px;height:25px;
+  margin-top:-30px;
+  position:absolute;
+  font-size:22px;
+  text-align:center;
+  color:#999
+}
+.labelscreen .owl-controls .fa-chevron-right:before{
+  content:">";
+  display:block;
+  border-radius:50%;
+  border:1px solid #999;
+  width:25px;height:25px;
+  position:absolute;
+  right:0;
+  margin-top:-50px;
+  font-size:22px;
+  text-align:center;
+  color:#999
+}
