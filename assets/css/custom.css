@@ -237,3 +237,6 @@ ul.keyfeature li::before{
   text-align:center;
   color:#999
 }
+::selection{
+  background-color:#d14a4c !important;
+}
