@@ -583,7 +583,7 @@ a:hover {
 /* Showing the hover p */
 .shiping-type:hover .shiping-type-text p.onhover-p {
 	display: block;
-	opacity: .7;
+	opacity: .8;
 }
 
 /* Responsive */
