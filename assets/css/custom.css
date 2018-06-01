@@ -15,8 +15,17 @@ ul,ol{
   letter-spacing:-4px;
   text-shadow:1px 2px 4px rgba(0, 0, 0, .2)
 }
+.scene6-text1{
+  font-size:60px;
+  color:#4b5069;
+  letter-spacing:-4px;
+  text-shadow:1px 2px 4px rgba(0, 0, 0, .2)
+}
 .scene2-text1 strong{
   color:#8c6759
+}
+.scene6-text1 strong{
+  color:#3c6084
 }
 .scene2-text2{
   color:#53656a;
@@ -191,7 +200,7 @@ ul.keyfeature li::before{
   color:rgba(255,255,255,.5);
   font-size:11px;
 }
-.labelArch img,.labelscreen img{
+.labelArch img,.labelscreen img,.rtlsArch img{
   max-width:100%;
 }
 .labelscreen img{
