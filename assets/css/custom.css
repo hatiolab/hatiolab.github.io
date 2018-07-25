@@ -294,3 +294,35 @@ ul.keyfeature li::before{
   color:rgba(255,255,255,1) !important;
   text-decoration:none;
 }
+.navbar .container{
+  width : 90% !important
+}
+.header-v5 .navbar-header{margin-right:0 !important}
+.navbar-toggle{
+  margin-right:-10px;
+}
+
+@media (min-width: 992px) {
+  .navbar .language{
+    margin-top:15px
+}
+  
+}
+.navbar .language{
+  display:block;
+  float:left;
+  width:auto;
+}
+.navbar .language li{
+  float:left;
+  display:block;
+  margin-top:12px;margin-left:5px
+}
+.navbar .language a{
+  padding:3px 5px;
+  color:#555;
+}
+.ko .ko,.cn .cn,.en .en{
+  font-weight:bold;
+  border-bottom:2px solid rgba(207,69,69,.8);
+}
