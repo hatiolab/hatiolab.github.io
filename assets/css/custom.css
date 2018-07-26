@@ -4,6 +4,9 @@ ul,ol{
   list-style:none;
   margin:0;padding:0
 }
+html:lang(zh) *{
+  font-family: 'Noto Sans SC', sans-serif !important;
+}
 .revolution-mch-1 .tp-caption span{
   color:#993333;
   font-size:28px;
