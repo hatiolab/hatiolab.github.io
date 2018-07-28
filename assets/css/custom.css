@@ -329,3 +329,13 @@ ul.keyfeature li::before{
   font-weight:bold;
   border-bottom:2px solid rgba(207,69,69,.8);
 }
+.cn .weProvide p{
+  height:40px;
+}
+.en .weProvide h3{
+  line-height:1.4;
+  height:50px
+}
+.en .weProvide p{
+  height:60px;
+}
