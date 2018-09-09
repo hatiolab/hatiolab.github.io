@@ -53,6 +53,7 @@ html:lang(zh) *{
   -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
 }
 .featureVodDisc{
+  display:block;
   padding:10px 0;
   font-size:16px;
   line-height:1.7;
@@ -269,6 +270,49 @@ ul.keyfeature li::before{
   font-size:22px;
   text-align:center;
   color:#999
+}
+.link-issues{
+  width:100px;height:100px;
+  display:block;
+  border-radius:50%;
+  background-color:rgba(207,69,69,1);
+  position: absolute;
+  margin-top:-50px;right:10%;
+  z-index:100;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+  transition: all 1s ease;
+}
+.link-issues a{
+  display:block;
+  padding-top:20px;
+  font-size:18px;
+  color:#fff;
+  text-align:center;
+  letter-spacing:-1px;
+  line-height:1.2;
+  text-transform:capitalize;
+}
+.link-issues strong{
+  display:block
+}
+.link-issues a i{
+  display:block;
+  margin-top:5px;
+  transition: all 1s ease;
+}
+.link-issues a:hover{
+  text-decoration:none;
+}
+.link-issues:hover{
+  width:115px;height:115px;
+}
+.link-issues:hover a{
+  font-size:21px;
+}
+.link-issues:hover a i{
+  transform: rotate(360deg);
 }
 ::selection{
   background-color:rgba(207,69,69,.2) !important;
