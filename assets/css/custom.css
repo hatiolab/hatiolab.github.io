@@ -406,12 +406,13 @@ ul.keyfeature li::before {
 .en .weProvide p {
   height: 60px;
 }
-span.redbg {
+div.redbg {
   display: block;
   position: relative;
   float: right;
   margin-top: -9%;
   margin-right: 54.5%;
+  z-index: 1000;
 }
 a.redbg {
   display: inline-block;
@@ -427,7 +428,7 @@ a.redbg {
   }
 }
 @media screen and (max-width: 460px) {
-  span.redbg {
+  div.redbg {
     margin-top: -10.5%;
     margin-right: 13%;
   }
@@ -438,12 +439,12 @@ a.redbg {
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
-  span.redbg {
+  div.redbg {
     margin-top: -6%;
   }
 }
 @media screen and (min-width: 1651px) and (max-width: 1920px) {
-  span.redbg {
+  div.redbg {
     margin-top: -4%;
   }
 }
@@ -454,7 +455,7 @@ a.redbg {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-width: 0 1px;
   }
-  span.redbg {
+  div.redbg {
     margin-top: -4%;
   }
 }
