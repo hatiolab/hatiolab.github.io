@@ -241,7 +241,7 @@ ul.keyfeature li::before {
 .labelscreen img,
 .rtlsArch img,
 .mesArch img {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
 }
 .labelscreen img {
@@ -422,6 +422,30 @@ a.redbg {
   border-radius: 20px;
   color: #fff;
 }
+.operatoMarket strong {
+  font-size: 16px;
+}
+.operatoMarket ol {
+  list-style: decimal;
+  margin-left: 12px;
+}
+.progress.vertical {
+  margin: 0 10px 0 0;
+}
+.operatoMarket h4 {
+  position: relative;
+  top: -55px;
+  font-size: 12px;
+  color: #fff;
+}
+.operatoMarket .value {
+  font-size: 11px;
+  font-weight: bold;
+}
+.operatoMarket .col-xs-2 {
+  padding: 0 7px;
+}
+
 @media (min-width: 992px) {
   .navbar .language {
     margin-top: 15px;
