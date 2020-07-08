@@ -134,6 +134,31 @@ ul.keyfeature li::before {
 .functionList.function-report .thumbnail {
   height: 500px;
 }
+.video-description a {
+  color: #687074;
+  font-size: 18px;
+}
+.video-description .gender {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 3px;
+  color: #585858;
+  font-size: 15px;
+}
+.video-description .duration {
+  font-size: 12px;
+}
+.video-description .duration i {
+  color: rgba(207, 69, 69, 0.7);
+}
+.video-list .item {
+  margin: 0;
+}
+.illustration-v2 .video-list .add-to-cart {
+  top: -20px;
+}
 
 @media (max-width: 1015px) {
   .customNavigation {
@@ -153,7 +178,8 @@ ul.keyfeature li::before {
 .weProvide .overflow-h {
   text-align: left;
 }
-.weProvide h3 {
+.weProvide h3,
+.detailFeature h3 {
   margin-bottom: 0;
   font-size: 18px;
   line-height: 1.7;
@@ -242,6 +268,9 @@ ul.keyfeature li::before {
 .rtlsArch img,
 .mesArch img {
   max-width: 1000px;
+  width: 100%;
+}
+.fullSize img {
   width: 100%;
 }
 .labelscreen img {
@@ -445,7 +474,39 @@ a.redbg {
 .operatoMarket .col-xs-2 {
   padding: 0 7px;
 }
-
+.detailFeature {
+  margin: 40px 0;
+}
+.detailFeature h3 {
+  background-color: #3b999c;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.detailFeature li {
+  text-align: left;
+}
+.detailFeature li::before {
+  content: "";
+}
+.feature-img img {
+  max-width: 95%;
+  margin: 10px 0 25px 0;
+  text-align: center;
+}
+.feature-img-middle img {
+  max-width: 70%;
+  margin: 10px 0 25px 0;
+  text-align: center;
+}
+.video-img {
+  border-radius: 5px;
+  border: 2px solid #444;
+  border-width: 2px 2px 4px 2px;
+  border-bottom-color: #303030;
+  overflow: hidden;
+}
 @media (min-width: 992px) {
   .navbar .language {
     margin-top: 15px;
@@ -466,15 +527,27 @@ a.redbg {
   div.redbg {
     margin-top: -6%;
   }
+  .wrapper {
+    max-width: 1400px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-width: 0 1px;
+  }
 }
 @media screen and (min-width: 1651px) and (max-width: 1920px) {
   div.redbg {
     margin-top: -4%;
   }
+  .wrapper {
+    max-width: 1400px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-width: 0 1px;
+  }
 }
 @media screen and (min-width: 1921px) {
   .wrapper {
-    width: 1920px;
+    max-width: 1400px;
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-width: 0 1px;
