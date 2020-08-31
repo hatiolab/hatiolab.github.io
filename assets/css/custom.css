@@ -495,6 +495,22 @@ a.redbg {
   margin: 10px 0 25px 0;
   text-align: center;
 }
+.feature-img li {
+  padding-bottom: 5px;
+  font-size: 16px;
+  text-align: left;
+}
+.feature-img li::before {
+  position: relative;
+  top: -3px;
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #39c2c7;
+  border-radius: 3px;
+}
 .feature-img-middle img {
   max-width: 70%;
   margin: 10px 0 25px 0;
