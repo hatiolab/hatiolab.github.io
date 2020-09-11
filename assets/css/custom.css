@@ -430,10 +430,11 @@ ul.keyfeature li::before {
 }
 .en .weProvide h3 {
   line-height: 1.4;
-  height: 50px;
+  height: 35px;
 }
 .en .weProvide p {
-  height: 60px;
+  height: 70px;
+  font-size: 13px;
 }
 div.redbg {
   display: block;
@@ -501,11 +502,10 @@ a.redbg {
   text-align: left;
 }
 .feature-img li::before {
-  position: relative;
-  top: -3px;
   content: "";
-  display: inline-block;
-  margin-right: 4px;
+  display: block;
+  float: left;
+  margin: 8px 5px 12px 0;
   width: 7px;
   height: 7px;
   border: 2px solid #39c2c7;
