@@ -657,3 +657,10 @@
     top: -2px;
     position: relative;
 }
+.breadcrumb {
+    top: 10px;
+    z-index: 1;
+    padding-right: 0;
+    background: none;
+    position: relative;
+}
