@@ -523,6 +523,46 @@ a.redbg {
   border-bottom-color: #303030;
   overflow: hidden;
 }
+.breadcrumb {
+  margin: 0;
+  margin-top: -40px;
+  padding: 0;
+  float: right;
+}
+.breadcrumb a {
+  color: #fff;
+}
+[sitemap] > li {
+  width: 19%;
+  margin-right: 1%;
+  float: left;
+}
+[sitemap] > li:last-child {
+  width: 20%;
+  margin-right: 0;
+}
+[sitemap] .title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #d14a4c;
+  text-transform: capitalize;
+}
+[sitemap] li li a {
+  width: 90%;
+  display: block;
+  padding: 5px 0 3px 0;
+  border-bottom: 1px dotted #ccc;
+  color: #333;
+}
+[sitemap] li li a:hover {
+  text-decoration: none;
+  color: rgb(209, 74, 76);
+  border-bottom: 1px dotted rgba(209, 74, 76, 0.5);
+}
+[sitemap] li li a::before {
+  content: "-";
+  margin-right: 5px;
+}
 @media (min-width: 992px) {
   .navbar .language {
     margin-top: 15px;
@@ -537,6 +577,12 @@ a.redbg {
     margin-bottom: 0;
     padding: 1px;
     font-size: 11px;
+  }
+  [sitemap] > li {
+    width: 49%;
+  }
+  [sitemap] > li:last-child {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
