@@ -592,6 +592,13 @@ a.redbg {
   [sitemap] > li:last-child {
     width: 50%;
   }
+  .navbar .container {
+    width: 95% !important;
+  }
+  .navbar .language a {
+    font-size: 12px;
+    padding: 3px;
+  }
 }
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
   div.redbg {
