@@ -159,6 +159,12 @@ ul.keyfeature li::before {
 .illustration-v2 .video-list .add-to-cart {
   top: -20px;
 }
+lottie-player {
+  width: 155px;
+  height: 35px;
+  overflow: hidden;
+  cursor: pointer;
+}
 
 @media (max-width: 1015px) {
   .customNavigation {
