@@ -174,8 +174,9 @@ ul.keyfeature li::before {
 }
 .auth-brand lottie-player {
   position: absolute;
+  top: -11%;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: rgba(20, 154, 155);
 }
 .auth-brand span {
