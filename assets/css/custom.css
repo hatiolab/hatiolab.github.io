@@ -161,7 +161,7 @@ ul.keyfeature li::before {
 }
 .auth-brand {
   width: 250px;
-  min-height: 500px;
+  min-height: 430px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
