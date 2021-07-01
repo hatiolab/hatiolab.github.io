@@ -11,6 +11,41 @@ ol {
 html:lang(zh) * {
   font-family: "Noto Sans SC", sans-serif !important;
 }
+.header-v5 .navbar-default .navbar-nav > li > a.specialMenu {
+  background-color: #da706f;
+  border-radius: 30px;
+  margin-top: 25px;
+  padding: 1px 10px 5px 10px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: inherit;
+  line-height: inherit;
+}
+.specialMenu {
+  animation: wiggle 2.5s infinite;
+}
+.specialMenu:hover {
+  animation: none;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .revolution-mch-1 .tp-caption span {
   color: #993333;
   font-size: 28px;
@@ -628,6 +663,9 @@ a.redbg {
   .navbar .language a {
     font-size: 12px;
     padding: 3px;
+  }
+  .header-v5 .navbar-default .navbar-nav > li > a.specialMenu {
+    margin: 10px 0;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
