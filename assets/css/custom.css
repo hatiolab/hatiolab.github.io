@@ -14,7 +14,7 @@ html:lang(zh) * {
 .header-v5 .navbar-default .navbar-nav > li > a.specialMenu {
   background-color: #da706f;
   border-radius: 30px;
-  margin-top: 25px;
+  margin-top: 26px;
   padding: 1px 10px 5px 10px;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
@@ -26,8 +26,22 @@ html:lang(zh) * {
 .specialMenu {
   animation: wiggle 2.5s infinite;
 }
-.specialMenu:hover {
+.header-v5 .navbar-default .navbar-nav > li > a.specialMenu:hover,
+.header-v5 .navbar-default .navbar-nav > li > a.specialLink:hover {
   animation: none;
+  border-top: 2px solid transparent;
+}
+.header-v5 .navbar-default .navbar-nav > li > a.specialLink {
+  background-color: #6b81d2;
+  border-radius: 30px;
+  margin: 26px 10px 0 0;
+  padding: 1px 10px 5px 10px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: inherit;
+  line-height: inherit;
 }
 @keyframes wiggle {
   0% {
@@ -229,6 +243,28 @@ ul.keyfeature li::before {
   padding-top: 0px;
   font-size: 16px;
   font-weight: normal;
+}
+.slide-caption-aidoop {
+  font-size: 18px;
+  margin-left: -100px;
+}
+.shiping-types .shiping-type {
+  padding: 0;
+}
+.shiping-type-img {
+  right: 0;
+}
+.shiping-type-app-logo {
+  width: 96px;
+  display: block;
+  margin: auto;
+}
+.shiping-type-text h3 {
+  margin-bottom: 10px;
+}
+.shiping-type-text h3 strong {
+  padding-bottom: 10px;
+  font-size: 30px;
 }
 
 @media (max-width: 1015px) {
@@ -664,8 +700,12 @@ a.redbg {
     font-size: 12px;
     padding: 3px;
   }
-  .header-v5 .navbar-default .navbar-nav > li > a.specialMenu {
+  .header-v5 .navbar-default .navbar-nav > li > a.specialMenu,
+  .header-v5 .navbar-default .navbar-nav > li > a.specialLink {
     margin: 10px 0;
+  }
+  .aidoop .revolution-ch2:after {
+    display: none;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
