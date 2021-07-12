@@ -725,7 +725,7 @@ a.btn-u-lg.btn-u-upper {
 .shiping-types .shiping-type {
   padding: 30px 20px;
   background: #f8f8f8;
-  min-height: 400px;
+  min-height: 355px;
   position: relative;
   z-index: 5;
   overflow: hidden;
@@ -826,7 +826,7 @@ a.btn-u-lg.btn-u-upper {
 /* Responsive */
 @media (max-width: 992px) {
   .shiping-type-img {
-    width: 50%;
+    /* width: 50%; */
     right: 0;
     transition: all 1s ease-in-out 0s;
   }
