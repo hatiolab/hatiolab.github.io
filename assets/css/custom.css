@@ -271,6 +271,14 @@ ul.keyfeature li::before {
   .customNavigation {
     display: block;
   }
+  div.tp-caption.revolution-ch1.sft.start {
+    margin-left: 5px !important;
+    font-size: 45px;
+  }
+  div.tp-caption.sft.start span {
+    margin-left: 18px !important;
+    font-size: 18px;
+  }
 }
 
 .customNavigation .owl-btn.prev {
@@ -713,6 +721,14 @@ a.redbg {
   }
   .featureVodDisc strong {
     font-size: 24px;
+  }
+  div.tp-caption.revolution-ch1.sft.start {
+    margin-left: 0px !important;
+    font-size: 35px;
+  }
+  div.tp-caption.sft.start span {
+    margin-left: 10px !important;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
