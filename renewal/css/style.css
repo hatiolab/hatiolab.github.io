@@ -17656,8 +17656,8 @@ aside .instafeed-grid.gutter-double-extra-large {
 .tab-style-02 .nav-tabs > li.nav-item > a.nav-link:focus,
 .tab-style-02 .nav-tabs > li.nav-item > a.nav-link:hover {
   border-bottom: none;
-  color: #0038e3;
-  background: none;
+  color: #3f5766;
+  background: #fff;
 }
 .tab-style-02 .nav-tabs.nav-tabs-light > li.nav-item > a.nav-link.active,
 .tab-style-02 .nav-tabs.nav-tabs-light > li.nav-item > a.nav-link.active:focus,

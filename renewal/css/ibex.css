@@ -17,6 +17,12 @@
 .ibex-text-color-deep-green {
   color: #40ab66;
 }
+.ibex-text-color-operato {
+  color: #0791ad;
+}
+.ibex-text-color-warehouse {
+  color: #1b55b7;
+}
 .ibex-text-light-yellow-color {
   color: #ffeebf;
 }
@@ -28,6 +34,12 @@
 }
 .ibex-background-color-deep-green {
   background-color: #40ab66;
+}
+.ibex-background-color-operato {
+  background-color: #0791ad;
+}
+.ibex-background-color-warehouse {
+  background-color: #1b55b7;
 }
 .word-keep {
   word-break: keep-all;
@@ -69,4 +81,7 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+.smartfactory .nav-item .active i {
+  color: #40ab66 !important;
 }
