@@ -15749,6 +15749,10 @@
     margin-bottom: 10.5rem;
   }
 
+  .col-sm-full {
+    width: 90%;
+  }
+
   /* margin right */
   .sm-margin-one-right {
     margin-right: 1%;
@@ -24676,6 +24680,9 @@
   /* header search */
   .active-form .form-wrapper .search-form {
     height: 85vh;
+  }
+  .col-sm-6 {
+    width: 90%;
   }
 }
 
