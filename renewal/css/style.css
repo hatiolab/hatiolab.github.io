@@ -347,7 +347,6 @@ h6 {
   padding: 0;
   letter-spacing: -0.5px;
   font-weight: inherit;
-  text-transform: capitalize;
   word-break: keep-all;
 }
 h1 {
@@ -409,6 +408,10 @@ h6 {
 .text-extra-large {
   font-size: 20px;
   line-height: 28px;
+}
+.text-extra-large1 {
+  font-size: 24px;
+  line-height: 32px;
 }
 .title-extra-small {
   font-size: 30px;
@@ -894,11 +897,11 @@ a.text-very-light-white-transparent-hover:hover {
 .text-gradient-fast-blue-purple {
   background: linear-gradient(
     to right,
-    #0039e3,
-    #0039e3,
-    #5e28dd,
-    #741bd9,
-    #8600d4
+    #0163fd,
+    #0073f7,
+    #0084f0,
+    #009ce7,
+    #04c8ca
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1772,11 +1775,11 @@ a.text-gradient-fuego-turquoise-hover:hover {
 .bg-gradient-fast-blue-purple {
   background-image: linear-gradient(
     to right top,
-    #0039e3,
-    #4132e0,
-    #5e28dd,
-    #741bd9,
-    #8600d4
+    #0163fd,
+    #0073f7,
+    #0084f0,
+    #009ce7,
+    #04c8ca
   );
 }
 .bg-gradient-orange-pink {
@@ -17254,7 +17257,7 @@ aside .instafeed-grid.gutter-double-extra-large {
   max-width: 100%;
 }
 .feature-box-left-icon .feature-box-icon {
-  margin-right: 35px;
+  margin-right: 20px;
 }
 .feature-box-left-icon {
   flex-flow: row wrap;

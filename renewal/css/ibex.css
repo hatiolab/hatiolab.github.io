@@ -21,7 +21,7 @@
   color: #0791ad;
 }
 .ibex-text-color-warehouse {
-  color: #1b55b7;
+  color: #0082f1;
 }
 .ibex-text-light-yellow-color {
   color: #ffeebf;
@@ -39,7 +39,7 @@
   background-color: #0791ad;
 }
 .ibex-background-color-warehouse {
-  background-color: #1b55b7;
+  background-color: #0082f1;
 }
 .word-keep {
   word-break: keep-all;
@@ -47,6 +47,9 @@
 .small-h5 {
   font-size: 1.7rem;
   line-height: 2.6rem;
+}
+.chef-modules .feature-box {
+  height: 100%;
 }
 
 [main] .post-details {
@@ -91,4 +94,9 @@
 .icon-eq {
   width: 85px;
   height: 85px;
+}
+.biz-warehouse-p {
+  padding: 3px 0;
+  text-align: left;
+  color: #fff;
 }
