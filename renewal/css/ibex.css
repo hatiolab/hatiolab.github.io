@@ -100,3 +100,9 @@
   text-align: left;
   color: #fff;
 }
+.history li strong {
+  margin-right: 10px;
+}
+.company .process-step-item {
+  width: 100%;
+}
