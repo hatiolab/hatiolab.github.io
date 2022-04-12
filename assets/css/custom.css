@@ -9,7 +9,7 @@ ol {
   padding: 0;
 }
 html:lang(zh) * {
-  font-family: "Noto Sans SC", sans-serif !important;
+  font-family: "Noto Sans KR", sans-serif !important;
 }
 .header-v5 .navbar-default .navbar-nav > li > a.specialMenu {
   background-color: #da706f;
