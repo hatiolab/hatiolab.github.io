@@ -54,7 +54,7 @@ html { font-size: 14px; }
 body { font-size: 15px; line-height: 30px; font-weight: 400; color: #828282; font-family: 'Roboto', sans-serif; padding: 0; margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-break: break-word }
 body, html { -moz-osx-font-smoothing: grayscale; }
 a { text-decoration: none; }
-a:hover, a:focus { text-decoration: none; outline: none; outline-offset:0; color: #0038e3; }
+a:hover, a:focus { text-decoration: none; outline: none; outline-offset:0; color: #d6000f; }
 a, a.nav-link, a:active, a:focus { color: #828282; }
 a, a.nav-link, .btn, input, textarea, select { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 img { max-width: 100%; height: auto; }
@@ -99,8 +99,8 @@ button, button:focus, button:hover { outline: none; }
 .transition { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { padding-right: 15px; padding-left: 15px; }
-.row { margin-right: -15px; margin-left: -15px; }
-.row>* { padding-right: 15px; padding-left: 15px; }
+.row { margin-right: -25px; margin-left: -25px; }
+.row>* { padding-right: 25px; padding-left: 25px; }
 .row.g-0 { margin-right: 0; margin-left: 0; }
 .row.g-0>* { padding-right: 0; padding-left: 0; }
 header [class^="container-"] [class^="col-"], header [class^="container-"] [class*=" col-"] { position: relative; padding-left: 15px; padding-right: 15px; }
@@ -2839,7 +2839,7 @@ header.sticky .navbar.header-dark .navbar-toggler-line { background: #fff; }
 .sticky .navbar.navbar-dark.header-light .navbar-nav > .nav-item.dropdown.simple-dropdown:hover > a { color: rgba(0,0,0,0.6) !important; }
 
 /* header logo */
-header .navbar .navbar-brand img, header.side-menu .logo img, header .sidebar-nav-menu .navbar-brand img { max-height: 36px; }
+header .navbar .navbar-brand img, header.side-menu .logo img, header .sidebar-nav-menu .navbar-brand img { max-height: 25px; }
 header .navbar .navbar-brand .default-logo, header.sticky .navbar-brand .alt-logo, header .sidebar-nav-menu .navbar-brand .default-logo { visibility: visible; opacity: 1; width: auto; transition-duration:0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; }
 header.sticky .navbar .navbar-brand .default-logo, header .navbar-brand .alt-logo, header .navbar .navbar-brand .mobile-logo, header .sidebar-nav-menu .navbar-brand .mobile-logo  { visibility: hidden; opacity: 0; width: 0; transition-duration:0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; }
 
@@ -2850,7 +2850,7 @@ header .navbar.always-fixed .navbar-brand .mobile-logo, header .sidebar-nav-menu
 header .header-always-fixed-scroll .navbar-brand .mobile-logo { transition-duration:0s; -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; }
 
 /* header navigation spacing */
-.navbar .navbar-nav .nav-link { padding: 25px 0; font-weight: 500; font-size: 14px; margin: 0 18px; word-break: normal; }
+.navbar .navbar-nav .nav-link { padding: 25px 0 10px 0; font-weight: 500; font-size: 14px; margin: 0 18px; word-break: normal; }
 .navbar.top-logo .navbar-nav .nav-link { padding: 20px 0; }
 .navbar .justify-content-end .navbar-nav li:last-child .nav-link { margin-right: 0; }
 .navbar .justify-content-start .navbar-nav li:first-child .nav-link { margin-left: 0; }
@@ -2988,7 +2988,7 @@ header .header-cart-icon .cart-count { position: absolute; top: -6px; right: -10
 .nav-item.dropdown.megamenu img { max-width: 210px}
 
 /* simple dropdown */
-.simple-dropdown .dropdown-menu { position: absolute; left: 0; width: 240px; padding: 25px 0; box-shadow: 0 0 35px rgba(0,0,0,0.1); margin: 0; border: none; border-radius: 4px; }
+.simple-dropdown .dropdown-menu { position: absolute; left: 0; width: 240px; padding: 10px 0; box-shadow: 0 0 35px rgba(0,0,0,0.1); margin: 0; border: none; border-radius: 4px; }
 .simple-dropdown .dropdown-menu .dropdown .dropdown-menu { left: 241px; margin-top:0; top: -25px; }
 .simple-dropdown.menu-left .dropdown-menu { position: absolute; left: auto; min-width: 240px; padding: 25px 0 20px;; }
 .simple-dropdown.menu-left .dropdown-menu .dropdown .dropdown-menu,
