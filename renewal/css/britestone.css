@@ -1,0 +1,11 @@
+/* main page style */
+.main-linecard-img{max-width:190px;margin-bottom:10px}
+.main-client-img img{max-width:180px}
+
+/* footer style */
+.familysite{text-align: right;}
+.familysite li{display:inline-block}
+.familysite select{background:none;background-color: transparent;border: none;margin:0;color:#8890A4;-webkit-appearance:auto;}
+.forSNS.extra-small-icon a{display:inline-block;width:25px;height:initial;line-height:20px;font-size:16px}
+.snsicon-forFooter{margin-top:-4px;width:18px;opacity:.6;}
+.snsicon-forFooter:hover{opacity: 1;}
