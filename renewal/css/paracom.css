@@ -9,8 +9,10 @@
 
 .text-paracom-blue{color:#165bb1}
 
-.border-color-paracom-blue{border-color:#165bb1}
+.border-color-paracom-blue{border-color:#165bb1 !important}
 .bg-color-paracom-blue{background-color:#00377B;}
+.tab-style-07 .nav-tabs > li.nav-item > a.nav-link.active{background: linear-gradient(to right, #0039e3, #0039e3, #5e28dd, #741bd9, #8600d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;font-weight:bold}
+.list-style-05 li{margin-bottom:0;}
 
 /* about style */
 .history {list-style-type: none;margin: 0;padding: 0;border-left:1px solid #dfdfdf}
