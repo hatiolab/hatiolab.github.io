@@ -1,312 +1,183 @@
-# Hatiolab 홈페이지 리뉴얼 기획안 (2026)
+# Hatiolab 2026 Strategic Renewal Plan
 
 ---
 
-## 1. 리뉴얼 배경
+## 1. Executive Summary
 
-### 1.1 피봇팅 방향
+### 1.1 Strategic Pivot
+**From "Heart of Supply Chain" to "AI-First Industrial Platform"**
 
-- 기존: 물류 소프트웨어 중심 ("Heart of Supply Chain")
-- 변경: **AI 중심 스마트팩토리 · 스마트 웨어하우스 플랫폼**
+Hatiolab은 기존의 물류 소프트웨어 공급사를 넘어, **AI 기반의 자율 운영(Autonomous Operation)을 실현하는 테크 기업**으로 도약합니다. 우리는 제조와 물류 현장의 데이터를 학습(Learn)하고, 미래를 예측(See)하며, 대화형 인터페이스(Talk)로 제어하는 통합 AI 플랫폼을 제공합니다.
 
-### 1.2 목표
-
-- AI 테크 기업으로서의 브랜드 리포지셔닝
-- 신규 AI 솔루션 라인업 소개
-- 세련되고 현대적인 웹사이트 구축
-
----
-
-## 2. 브랜드 정의
-
-### 2.1 회사 정체성
-
-**"스마트팩토리 · 스마트 웨어하우스를 위한 AI 플랫폼 기업"**
-
-### 2.2 슬로건 (안)
-
-> **"제조와 물류, AI로 다시 설계하다"**
-
-또는
-
-> **"AI가 운영하는 공장, AI가 관리하는 창고"**
-
-### 2.3 핵심 가치
-
-- 예측 기반 운영
-- 실시간 이상 감지
-- 자율 최적화
-- 자연어 인터페이스
+### 1.2 Core Objectives
+1.  **Brand Repositioning**: 단순 솔루션 벤더가 아닌, 산업 AI 기술을 선도하는 파트너로 재정의.
+2.  **Product Innovation**: LLM, 시계열 예측 등 최신 AI 기술이 내재화된 `Operato AI Platform` 런칭.
+3.  **Experience Upgrade**: Bento Grid, Glassmorphism 등 최신 트렌드를 반영한 압도적인 웹 경험 제공.
 
 ---
 
-## 3. 제품 포트폴리오
+## 2. Brand Identity
 
-### 3.1 전체 구조
+### 2.1 Mission Statement
+**"Redefining Industry with Artificial Intelligence"**
+(제조와 물류, AI로 다시 설계하다)
+
+### 2.2 Vision
+**"The Brain of Smart Operations"**
+현장의 모든 데이터가 모이고, 분석되고, 실행되는 두뇌 역할을 수행합니다.
+
+### 2.3 Core Values
+*   **Predictive (예측성)**: 사후 대응이 아닌 사전 예방.
+*   **Autonomous (자율성)**: 사람의 개입을 최소화한 최적화.
+*   **Conversational (대화형)**: 복잡한 데이터를 가장 쉬운 언어로.
+
+---
+
+## 3. Product Portfolio: Operato AI Platform
+
+우리의 솔루션은 **Data(수집) → Intelligence(분석) → Action(실행)**의 완결된 루프를 제공합니다.
+
+### 3.1 Architecture Overview
+
+```mermaid
+graph TD
+    subgraph "Edge Layer (Physical World)"
+        Sensors[IoT Sensors]
+        Machines[Equipment]
+        Workers[Workers]
+    end
+
+    subgraph "Operato AI Platform (The Brain)"
+        direction TB
+        
+        subgraph "Operato Learn (DataHub)"
+            Ingest[Data Ingestion]
+            Label[Auto Labeling]
+            Store[Vector DB / Data Lake]
+        end
+        
+        subgraph "Operato See (MLOps)"
+            Predict[Demand/Fault Prediction]
+            Detect[Anomaly Detection]
+            Optimize[Inventory Optimization]
+        end
+        
+        subgraph "Operato Talk (Agent)"
+            LLM[LLM Engine]
+            RAG[RAG System]
+            Action[Function Calling]
+        end
+        
+        Learn --> See
+        See --> Talk
+        Talk --> Learn
+    end
+
+    subgraph "Application Layer (Solutions)"
+        Vis[Operato Visualizer]
+        WMS[Smart Warehouse (WMS/WCS)]
+        MES[Smart Factory (MES)]
+    end
+
+    Edge Layer --> Ingest
+    Action --> WMS
+    Action --> MES
+    Predict --> Vis
+```
+
+### 3.2 Key Solutions
+
+#### 1. Operato Learn (DataHub)
+> **"The Foundation of Intelligence"**
+
+*   **Role**: 파편화된 현장 데이터를 AI가 학습 가능한 형태로 실시간 정제 및 표준화.
+*   **Key Features**:
+    *   Multi-protocol Data Ingestion (MQTT, OPC-UA, Modbus)
+    *   Automated Data Labeling & Versioning
+    *   Real-time Data Quality Monitoring
+
+#### 2. Operato See (MLOps)
+> **"The Eye of Future"**
+
+*   **Role**: 과거 데이터를 기반으로 미래의 위험을 예측하고 최적의 운영 시나리오 제안.
+*   **Key Features**:
+    *   Predictive Maintenance (설비 고장 예측)
+    *   Demand Forecasting (수요 예측)
+    *   Dynamic Route Optimization (동적 경로 최적화)
+
+#### 3. Operato Talk (Agent)
+> **"The Voice of Operations"**
+
+*   **Role**: 전문 지식이 없어도 자연어로 복잡한 시스템을 제어하고 인사이트 획득.
+*   **Key Features**:
+    *   Conversational BI (대화형 데이터 분석)
+    *   Workflow Automation Agent
+    *   Context-aware Alerting
+
+#### 4. Operato Visualizer
+> **"The Digital Twin Canvas"**
+
+*   **Role**: AI의 판단과 현장의 상태를 직관적인 2D/3D 그래픽으로 시각화.
+*   **Key Features**:
+    *   No-Code Dashboard Builder
+    *   Real-time 3D Rendering (WebGL)
+    *   Multi-device Support
+
+---
+
+## 4. Design Strategy
+
+### 4.1 Design Concept: "Futuristic Minimal"
+기술적 복잡함은 숨기고, 정보의 본질만 명료하게 전달합니다.
+
+### 4.2 Key Visual Elements
+1.  **Bento Grid Layout**: 정보를 모듈화하여 직관적으로 배치, 정리된 느낌과 리듬감 부여.
+2.  **Glassmorphism**: 깊이감과 현대적인 세련미를 주는 반투명 블러 효과 사용.
+3.  **Dynamic Gradients**: 정적인 단색 대신, 살아있는 듯한 미세한 움직임이 있는 그라디언트 활용.
+4.  **Micro-interactions**: 사용자의 행동에 반응하는 섬세한 애니메이션으로 몰입감 증대.
+
+### 4.3 Color Palette
+*   **Primary**: `Deep Space Navy` (#0a0a0f) - 무한한 우주와 같은 깊이감.
+*   **Accent**: `Electric Indigo` (#6366f1) to `Cyber Violet` (#8b5cf6) - 지능과 연결을 상징.
+*   **Text**: `Starlight White` (#ffffff) & `Moon Dust Grey` (#a0a0b0).
+
+### 4.4 Typography
+*   **English**: **Inter** - 가독성과 모던함의 표준.
+*   **Korean**: **Noto Sans KR** - 신뢰감 있는 고딕체.
+*   **Headings**: Bold & Tight Tracking으로 임팩트 강화.
+
+---
+
+## 5. Information Architecture (IA)
 
 ```
-┌─────────────────────────────────────────────────────┐
-│              Operato AI Platform                    │
-├─────────────────┬─────────────────┬─────────────────┤
-│  Operato Learn  │   Operato See   │  Operato Talk   │
-│   데이터 · 학습  │   예측 · 최적화  │   대화 · 자동화  │
-└────────┬────────┴────────┬────────┴────────┬────────┘
-         │                 │                 │
-         └─────────────────┼─────────────────┘
-                           ↓
-┌─────────────────────────────────────────────────────┐
-│            Operato Visualizer (시각화/모니터링)       │
-└─────────────────────────────────────────────────────┘
-                           ↓
-         ┌─────────────────┴─────────────────┐
-         ↓                                   ↓
-┌─────────────────────┐         ┌─────────────────────┐
-│   Smart Factory     │         │  Smart Warehouse    │
-├─────────────────────┤         ├─────────────────────┤
-│  Things Factory     │         │     Operato         │
-│  Operato Chef       │         │  (WMS/WCS/ECS)      │
-└─────────────────────┘         └─────────────────────┘
-```
-
-### 3.2 AI 솔루션 상세
-
-#### Operato Learn
-
-| 항목            | 내용                                                            |
-| --------------- | --------------------------------------------------------------- |
-| **역할**        | 데이터 수집, 정제, 학습 데이터셋 구축                           |
-| **태그라인**    | "배우는 AI"                                                     |
-| **핵심 기능**   | 실시간 데이터 파이프라인, 자동 라벨링, 데이터 버저닝, 품질 관리 |
-| **대상 데이터** | 설비 센서, 생산 로그, 물류 이벤트, 이미지/영상                  |
-
-#### Operato See
-
-| 항목          | 내용                                              |
-| ------------- | ------------------------------------------------- |
-| **역할**      | ML 기반 예측, 이상 감지, 최적화                   |
-| **태그라인**  | "미래를 보는 AI"                                  |
-| **핵심 기능** | 수요 예측, 설비 고장 예측, 품질 예측, 재고 최적화 |
-| **모델**      | 시계열 예측, 분류, 이상탐지                       |
-
-#### Operato Talk
-
-| 항목          | 내용                                                           |
-| ------------- | -------------------------------------------------------------- |
-| **역할**      | LLM 기반 자연어 인터페이스, 워크플로우 자동화                  |
-| **태그라인**  | "대화하는 AI"                                                  |
-| **핵심 기능** | 자연어 질의, 자동 리포트 생성, 알림/대응 자동화, 의사결정 지원 |
-| **기술**      | LLM, RAG, Function Calling, Agent Framework                    |
-
-### 3.3 공통 인프라
-
-#### Operato Visualizer
-
-| 항목          | 내용                                        |
-| ------------- | ------------------------------------------- |
-| **역할**      | 실시간 데이터 시각화 및 모니터링            |
-| **핵심 기능** | 2D/3D 시각화, 차트, 지도, 드래그앤드롭 편집 |
-| **특징**      | No ActiveX, 모든 브라우저/디바이스 지원     |
-
-### 3.4 도메인 솔루션
-
-#### Smart Warehouse
-
-| 제품            | 설명                              |
-| --------------- | --------------------------------- |
-| **Operato WMS** | 창고 관리 시스템 (입고/재고/출고) |
-| **Operato WCS** | 창고 제어 시스템 (분류/피킹/소터) |
-| **Operato ECS** | 설비 제어 시스템                  |
-
-#### Smart Factory
-
-| 제품               | 설명                                 |
-| ------------------ | ------------------------------------ |
-| **Things Factory** | MES (제조실행시스템)                 |
-| **Operato Chef**   | F&B 특화 생산관리 (밀키트, 케이터링) |
-
----
-
-## 4. 사이트 구조 (IA)
-
-```
-홈 (/)
-├── About (/about)
-│   ├── 비전 & 미션
-│   ├── 연혁
-│   └── 팀
-│
-├── Solutions (/solutions)
-│   ├── AI Platform 개요
-│   ├── Operato Learn
-│   ├── Operato See
-│   ├── Operato Talk
+/ (Home)
+├── Solutions
+│   ├── Operato Learn (DataHub)
+│   ├── Operato See (MLOps)
+│   ├── Operato Talk (Agent)
 │   └── Operato Visualizer
-│
-├── Products (/products)
-│   ├── Smart Warehouse
-│   │   └── Operato WMS/WCS/ECS
-│   └── Smart Factory
-│       ├── Things Factory
-│       └── Operato Chef
-│
-├── Case Studies (/cases)
-│   └── 고객 사례
-│
-├── Resources (/resources)
-│   ├── 브로셔 다운로드
-│   └── 블로그/뉴스
-│
-└── Contact (/contact)
-    └── 문의하기
+├── Products
+│   ├── Smart Warehouse (WMS/WCS/ECS)
+│   └── Smart Factory (Things Factory/Chef)
+├── Company
+│   ├── About Us
+│   └── Careers
+└── Contact
 ```
 
 ---
 
-## 5. 페이지별 구성
+## 6. Roadmap
 
-### 5.1 홈페이지 (/)
-
-| 섹션            | 내용                                            |
-| --------------- | ----------------------------------------------- |
-| **Hero**        | 핵심 메시지 + CTA (솔루션 알아보기 / 데모 요청) |
-| **Why AI**      | AI가 가져오는 4가지 가치                        |
-| **AI Platform** | Learn · See · Talk 3개 솔루션 카드              |
-| **Visualizer**  | 시각화 데모 + 기능 소개                         |
-| **Products**    | 도메인 솔루션 카드 (Warehouse / Factory)        |
-| **CTA**         | 상담/데모 요청 유도                             |
-| **Contact**     | 연락처 + 문의 폼                                |
-
-### 5.2 Solutions 페이지 (/solutions)
-
-| 섹션              | 내용                  |
-| ----------------- | --------------------- |
-| **Hero**          | AI Platform 소개      |
-| **Architecture**  | 제품 구조도 (시각적)  |
-| **Operato Learn** | 상세 기능 + 스크린샷  |
-| **Operato See**   | 상세 기능 + 스크린샷  |
-| **Operato Talk**  | 상세 기능 + 대화 데모 |
-| **Visualizer**    | 상세 기능 + 스크린샷  |
-| **CTA**           | 상담 요청             |
-
-### 5.3 Products 페이지 (/products)
-
-| 섹션                | 내용                              |
-| ------------------- | --------------------------------- |
-| **Smart Warehouse** | Operato WMS/WCS/ECS 상세          |
-| **Smart Factory**   | Things Factory, Operato Chef 상세 |
-| **Integration**     | AI Platform과의 연동 설명         |
+| Phase | Milestone | Key Deliverables |
+| :--- | :--- | :--- |
+| **Phase 1** | **Foundation** | 메인 페이지 리뉴얼, 브랜드 아이덴티티 확립 (완료) |
+| **Phase 2** | **Expansion** | 솔루션(Learn/See/Talk) 상세 페이지 구축 |
+| **Phase 3** | **Integration** | 제품(Warehouse/Factory) 페이지 및 연동 시나리오 구현 |
+| **Phase 4** | **Global** | 다국어 지원 및 글로벌 SEO 최적화 |
 
 ---
 
-## 6. 디자인 가이드
-
-### 6.1 톤앤매너
-
-- **키워드**: 테크, 미래지향적, 신뢰, 전문성
-- **분위기**: 세련되고 깔끔한, 과하지 않은 애니메이션
-
-### 6.2 컬러 시스템
-
-| 용도               | 컬러          | 코드      |
-| ------------------ | ------------- | --------- |
-| 배경 (Primary)     | 다크 네이비   | `#0a0a0f` |
-| 배경 (Secondary)   | 다크 그레이   | `#12121a` |
-| 텍스트 (Primary)   | 화이트        | `#ffffff` |
-| 텍스트 (Secondary) | 라이트 그레이 | `#a0a0b0` |
-| 액센트 (Primary)   | 인디고        | `#6366f1` |
-| 액센트 (Secondary) | 바이올렛      | `#8b5cf6` |
-| 성공               | 그린          | `#22c55e` |
-| 경고               | 앰버          | `#f59e0b` |
-| 에러               | 레드          | `#ef4444` |
-
-### 6.3 타이포그래피
-
-| 용도     | 폰트            | 굵기    |
-| -------- | --------------- | ------- |
-| 영문     | Inter           | 300-800 |
-| 한글     | Noto Sans KR    | 300-700 |
-| 헤드라인 | Bold/Extra Bold | 700-800 |
-| 본문     | Regular         | 400     |
-
-### 6.4 레이아웃
-
-- 최대 너비: 1200px
-- 섹션 패딩: 상하 128px
-- 그리드: 12컬럼 (반응형)
-
-### 6.5 컴포넌트
-
-| 컴포넌트 | 스타일                              |
-| -------- | ----------------------------------- |
-| 버튼     | 그라데이션 배경 + 글로우 효과       |
-| 카드     | 다크 배경 + 미세한 보더 + 호버 효과 |
-| 뱃지     | 반투명 배경 + 액센트 보더           |
-| 폼       | 다크 인풋 + 포커스 글로우           |
-
----
-
-## 7. 기술 스택
-
-| 항목     | 기술                               |
-| -------- | ---------------------------------- |
-| 마크업   | HTML5, Semantic                    |
-| 스타일   | CSS3, CSS Variables, Flexbox, Grid |
-| 인터랙션 | Vanilla JavaScript                 |
-| 폰트     | Google Fonts (Inter, Noto Sans KR) |
-| 아이콘   | SVG 인라인                         |
-| 호스팅   | GitHub Pages                       |
-
-### 향후 고려
-
-- 프레임워크 전환 (Next.js, Astro)
-- CMS 연동 (블로그, 뉴스)
-- 다국어 지원 (i18n)
-
----
-
-## 8. 마일스톤
-
-| 단계        | 내용                    |
-| ----------- | ----------------------- |
-| **Phase 1** | 메인 페이지 완성 (현재) |
-| **Phase 2** | Solutions 상세 페이지   |
-| **Phase 3** | Products 상세 페이지    |
-| **Phase 4** | About, Contact 페이지   |
-| **Phase 5** | Case Studies, Resources |
-| **Phase 6** | 다국어 (영문)           |
-
----
-
-## 9. 제거 항목 (기존 사이트 대비)
-
-| 제거          | 사유                      |
-| ------------- | ------------------------- |
-| Things Label  | 사업 포트폴리오에서 제외  |
-| Things RTLS   | 사업 포트폴리오에서 제외  |
-| AI-doop       | 사업 포트폴리오에서 제외  |
-| Things Board  | Operato Visualizer로 통합 |
-| /renewal 폴더 | Paracom (무관한 사업)     |
-
----
-
-## 10. 핵심 메시지 정리
-
-### 회사
-
-> **Hatiolab** - 스마트팩토리 · 스마트 웨어하우스를 위한 AI 플랫폼
-
-### AI 솔루션
-
-> **Operato Learn** - 배우는 AI
-> **Operato See** - 미래를 보는 AI
-> **Operato Talk** - 대화하는 AI
-
-### 흐름
-
-> **Learn → See → Talk**
-> 데이터를 배우고 → 미래를 보고 → 대화로 운영한다
-
----
-
-_문서 작성일: 2025년_
-_버전: 1.0_
+_Last Updated: 2025-12-03_
+_Confidential - Hatiolab Internal Use Only_
