@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hatiolab Operato AI Platform - DataHub, MLOps, Agent">
+    <title>Solutions | Hatiolab</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">Hatiolab</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#solutions">Solutions</a></li>
+                <li><a href="../index.html#products">Products</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="../index.html#contact" class="btn btn-primary">문의하기</a>
+                <button class="menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+            <span class="section-badge">Solutions</span>
+            <h1 class="page-title">Operato AI Platform</h1>
+            <p class="page-description">
+                데이터 수집부터 예측, 자동화까지<br>
+                완전한 AI 솔루션 스택을 제공합니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Architecture Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="architecture-diagram">
+                <div class="arch-layer layer-top">
+                    <div class="arch-item">
+                        <h4>Operato Agent</h4>
+                        <p>LLM + Workflow</p>
+                    </div>
+                </div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-layer layer-mid">
+                    <div class="arch-item">
+                        <h4>Operato MLOps</h4>
+                        <p>예측 · 최적화</p>
+                    </div>
+                </div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-layer layer-bottom">
+                    <div class="arch-item">
+                        <h4>Operato DataHub</h4>
+                        <p>데이터 수집 · 학습</p>
+                    </div>
+                </div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-layer layer-base">
+                    <div class="arch-item wide">
+                        <h4>Operato Visualizer</h4>
+                        <p>시각화 · 모니터링</p>
+                    </div>
+                </div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-layer layer-domain">
+                    <div class="arch-item">
+                        <h4>Smart Factory</h4>
+                        <p>Things Factory · Operato Chef</p>
+                    </div>
+                    <div class="arch-item">
+                        <h4>Smart Warehouse</h4>
+                        <p>Operato WMS/WCS/ECS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DataHub Section -->
+    <section id="datahub" class="section solution-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <span class="section-badge">Foundation</span>
+                    <h2>Operato DataHub</h2>
+                    <p class="detail-tagline">데이터 수집 · 학습 플랫폼</p>
+                    <p class="detail-desc">
+                        센서 데이터, 생산 로그, 물류 이벤트 등 현장의 모든 데이터를 수집하고,
+                        AI 학습을 위한 고품질 데이터셋을 구축합니다.
+                    </p>
+                    <div class="detail-features">
+                        <div class="feature-item">
+                            <span class="feature-num">01</span>
+                            <div>
+                                <h4>실시간 데이터 파이프라인</h4>
+                                <p>다양한 소스에서 실시간으로 데이터를 수집하고 정제합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">02</span>
+                            <div>
+                                <h4>자동 라벨링 및 버저닝</h4>
+                                <p>AI 학습에 필요한 라벨링을 자동화하고, 데이터셋 버전을 관리합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">03</span>
+                            <div>
+                                <h4>데이터 품질 관리</h4>
+                                <p>이상치 탐지, 결측치 처리 등 데이터 품질을 자동으로 관리합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">📊</div>
+                        <div class="visual-stats">
+                            <div class="stat">
+                                <span class="value">1M+</span>
+                                <span class="label">일일 데이터 포인트</span>
+                            </div>
+                            <div class="stat">
+                                <span class="value">99.9%</span>
+                                <span class="label">데이터 정확도</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MLOps Section -->
+    <section id="mlops" class="section solution-detail alt-bg">
+        <div class="container">
+            <div class="detail-grid reverse">
+                <div class="detail-content">
+                    <span class="section-badge">Intelligence</span>
+                    <h2>Operato MLOps</h2>
+                    <p class="detail-tagline">ML 기반 AIOps 솔루션</p>
+                    <p class="detail-desc">
+                        머신러닝 모델을 활용하여 수요 예측, 설비 고장 예측, 품질 예측,
+                        재고 최적화 등 핵심 비즈니스 문제를 해결합니다.
+                    </p>
+                    <div class="detail-features">
+                        <div class="feature-item">
+                            <span class="feature-num">01</span>
+                            <div>
+                                <h4>수요 및 생산 예측</h4>
+                                <p>과거 데이터와 외부 요인을 분석하여 정확한 수요를 예측합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">02</span>
+                            <div>
+                                <h4>설비 이상 감지</h4>
+                                <p>실시간 센서 데이터를 분석하여 고장을 사전에 예측합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">03</span>
+                            <div>
+                                <h4>재고 최적화 엔진</h4>
+                                <p>적정 재고 수준을 유지하며 비용을 최소화합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">🤖</div>
+                        <div class="visual-stats">
+                            <div class="stat">
+                                <span class="value">95%</span>
+                                <span class="label">예측 정확도</span>
+                            </div>
+                            <div class="stat">
+                                <span class="value">30%</span>
+                                <span class="label">비용 절감</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Section -->
+    <section id="agent" class="section solution-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <span class="section-badge">Interaction</span>
+                    <h2>Operato Agent</h2>
+                    <p class="detail-tagline">LLM 워크플로우 솔루션</p>
+                    <p class="detail-desc">
+                        자연어로 시스템을 제어하고, 복잡한 운영 워크플로우를 자동화합니다.
+                        누구나 쉽게 AI의 힘을 활용할 수 있습니다.
+                    </p>
+                    <div class="detail-features">
+                        <div class="feature-item">
+                            <span class="feature-num">01</span>
+                            <div>
+                                <h4>자연어 질의 및 명령</h4>
+                                <p>"오늘 생산량 알려줘", "A라인 가동 상태 확인해줘" 등 대화로 운영합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">02</span>
+                            <div>
+                                <h4>자동 리포트 생성</h4>
+                                <p>일일/주간/월간 리포트를 자동으로 생성하고 배포합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">03</span>
+                            <div>
+                                <h4>워크플로우 자동화</h4>
+                                <p>반복 업무를 AI가 자동으로 처리하여 업무 효율을 높입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card chat-demo">
+                        <div class="chat-message user">
+                            <span>오늘 출고 현황 알려줘</span>
+                        </div>
+                        <div class="chat-message bot">
+                            <span>오늘 총 1,234건 출고 완료되었습니다. 목표 대비 98.5% 달성입니다.</span>
+                        </div>
+                        <div class="chat-message user">
+                            <span>지연된 건은?</span>
+                        </div>
+                        <div class="chat-message bot">
+                            <span>3건이 지연 중입니다. 상세 내역을 보여드릴까요?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualizer Section -->
+    <section id="visualizer" class="section solution-detail alt-bg">
+        <div class="container">
+            <div class="detail-grid reverse">
+                <div class="detail-content">
+                    <span class="section-badge">Visualization</span>
+                    <h2>Operato Visualizer</h2>
+                    <p class="detail-tagline">실시간 모니터링 플랫폼</p>
+                    <p class="detail-desc">
+                        복잡한 데이터를 직관적인 대시보드로 시각화합니다.
+                        2D, 3D, 차트, 지도 등 다양한 컴포넌트를 제공합니다.
+                    </p>
+                    <div class="detail-features">
+                        <div class="feature-item">
+                            <span class="feature-num">01</span>
+                            <div>
+                                <h4>실시간 데이터 바인딩</h4>
+                                <p>데이터 소스와 실시간으로 연동되어 최신 현황을 표시합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">02</span>
+                            <div>
+                                <h4>드래그 앤 드롭 편집</h4>
+                                <p>코딩 없이 직관적으로 대시보드를 구성할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">03</span>
+                            <div>
+                                <h4>멀티 디바이스 지원</h4>
+                                <p>PC, 태블릿, 모바일 등 모든 환경에서 최적화된 화면을 제공합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">📈</div>
+                        <div class="visual-stats">
+                            <div class="stat">
+                                <span class="value">50+</span>
+                                <span class="label">시각화 컴포넌트</span>
+                            </div>
+                            <div class="stat">
+                                <span class="value">실시간</span>
+                                <span class="label">데이터 반영</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>AI 솔루션 도입을 검토 중이신가요?</h2>
+                <p>전문 컨설턴트가 귀사에 맞는 최적의 솔루션을 제안해 드립니다.</p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn btn-white btn-lg">상담 요청하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">Hatiolab</span>
+                    <p>AI-Powered Smart Factory & Warehouse</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#datahub">Operato DataHub</a></li>
+                            <li><a href="#mlops">Operato MLOps</a></li>
+                            <li><a href="#agent">Operato Agent</a></li>
+                            <li><a href="#visualizer">Operato Visualizer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#">Operato WMS/WCS</a></li>
+                            <li><a href="#">Things Factory</a></li>
+                            <li><a href="#">Operato Chef</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../index.html#about">About</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hatio, Lab. Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Additional Styles for this page -->
+    <style>
+        /* Page Header */
+        .page-header {
+            position: relative;
+            padding: 12rem 0 6rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .page-title {
+            font-size: var(--font-size-5xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-description {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-secondary);
+        }
+
+        /* Architecture Diagram */
+        .architecture-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-3xl);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-2xl);
+        }
+
+        .arch-layer {
+            display: flex;
+            gap: var(--spacing-xl);
+            justify-content: center;
+        }
+
+        .arch-item {
+            padding: var(--spacing-lg) var(--spacing-2xl);
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .arch-item.wide {
+            min-width: 440px;
+        }
+
+        .arch-item h4 {
+            font-size: var(--font-size-base);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .arch-item p {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+
+        .arch-arrow {
+            font-size: var(--font-size-xl);
+            color: var(--color-accent-primary);
+        }
+
+        .layer-top .arch-item {
+            border-color: var(--color-accent-primary);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        /* Solution Detail */
+        .solution-detail {
+            padding: var(--spacing-5xl) 0;
+        }
+
+        .solution-detail.alt-bg {
+            background: var(--color-bg-secondary);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-4xl);
+            align-items: center;
+        }
+
+        .detail-grid.reverse {
+            direction: rtl;
+        }
+
+        .detail-grid.reverse > * {
+            direction: ltr;
+        }
+
+        .detail-content h2 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .detail-tagline {
+            font-size: var(--font-size-lg);
+            color: var(--color-accent-primary);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .detail-desc {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .detail-features {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+
+        .feature-item {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        .feature-num {
+            font-size: var(--font-size-sm);
+            font-weight: 700;
+            color: var(--color-accent-primary);
+            opacity: 0.5;
+        }
+
+        .feature-item h4 {
+            font-size: var(--font-size-base);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .feature-item p {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+
+        /* Visual Card */
+        .visual-card {
+            padding: var(--spacing-2xl);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+        }
+
+        .visual-icon {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .visual-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+
+        .visual-stats .stat {
+            text-align: center;
+            padding: var(--spacing-md);
+            background: var(--color-bg-tertiary);
+            border-radius: var(--radius-md);
+        }
+
+        .visual-stats .value {
+            display: block;
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-accent-primary);
+        }
+
+        .visual-stats .label {
+            font-size: var(--font-size-xs);
+            color: var(--color-text-muted);
+        }
+
+        /* Chat Demo */
+        .chat-demo {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .chat-message {
+            max-width: 80%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-sm);
+        }
+
+        .chat-message.user {
+            align-self: flex-end;
+            background: var(--color-accent-gradient);
+            color: white;
+        }
+
+        .chat-message.bot {
+            align-self: flex-start;
+            background: var(--color-bg-tertiary);
+            color: var(--color-text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .architecture-diagram {
+                padding: var(--spacing-xl);
+            }
+
+            .arch-item.wide {
+                min-width: auto;
+            }
+
+            .arch-layer {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .arch-item {
+                min-width: auto;
+                width: 100%;
+            }
+
+            .detail-grid,
+            .detail-grid.reverse {
+                grid-template-columns: 1fr;
+                direction: ltr;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
