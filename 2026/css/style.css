@@ -238,7 +238,7 @@ h6 {
     padding-top: 100px;
     position: relative;
     overflow: hidden;
-    background-image: url('../images/hero-banner.png');
+    /* background-image: url('../media/hero-banner.png'); Removed for video background */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -394,6 +394,110 @@ h6 {
     background: var(--accent-primary);
     color: white;
     border-color: var(--accent-primary);
+}
+
+/* Sub-page Styles */
+.sub-hero {
+    min-height: 60vh;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 10, 15, 0.3), var(--bg-primary));
+    z-index: 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    border: 1px solid var(--glass-border);
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text-secondary);
+}
+
+.spec-table th,
+.spec-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.spec-table th {
+    color: var(--text-primary);
+    font-weight: 600;
+    width: 30%;
+}
+
+/* Language Toggle */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+    border-color: var(--glass-highlight);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-option {
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.lang-option.active {
+    background: var(--accent-primary);
+    color: white;
+    box-shadow: 0 2px 10px rgba(99, 102, 241, 0.3);
+}
+
+.lang-separator {
+    color: var(--glass-border);
+    font-size: 0.8rem;
+    margin: 0 2px;
+    display: none;
+    /* Hidden for pill style */
 }
 
 .use-case-content {

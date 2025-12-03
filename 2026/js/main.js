@@ -220,3 +220,29 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.selected').forEach(el => el.classList.remove('selected'));
     }
 });
+
+// Language Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const options = langToggle.querySelectorAll('.lang-option');
+            options.forEach(opt => opt.classList.toggle('active'));
+
+            // Log current language (Mock implementation)
+            const activeLang = langToggle.querySelector('.lang-option.active').dataset.lang;
+            console.log(`Language switched to: ${activeLang}`);
+
+            // Here you would implement actual translation logic
+            // e.g., switch content based on activeLang
+        });
+    }
+});
+
+// Hero Video Playback Speed
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('heroVideo');
+    if (video) {
+        video.playbackRate = 0.7;
+    }
+});

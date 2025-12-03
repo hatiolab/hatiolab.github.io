@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operato See | Hatiolab</title>
+    <meta name="description"
+        content="Industrial MLOps Platform. Predict failures and optimize operations with pre-trained AI models.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-panel"
+        style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 1200px; z-index: 1000; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <a href="../index.html" class="logo" style="font-weight: 800; font-size: 1.5rem; letter-spacing: -0.05em;">
+            Hatiolab
+        </a>
+        <ul class="nav-links" style="display: flex; gap: 2rem;">
+            <li><a href="../index.html#solutions">Solutions</a></li>
+            <li><a href="../index.html#products">Products</a></li>
+            <li><a href="../index.html#company">Company</a></li>
+        </ul>
+        <div class="lang-toggle" id="langToggle">
+            <span class="lang-option active" data-lang="en">EN</span>
+            <span class="lang-option" data-lang="kr">KR</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sub-hero">
+        <div class="container" style="position: relative; z-index: 1;">
+            <div style="max-width: 800px;">
+                <span class="badge"
+                    style="display: inline-block; padding: 6px 16px; background: rgba(99, 102, 241, 0.1); border-radius: 100px; font-size: 0.9rem; margin-bottom: 24px; border: 1px solid rgba(99, 102, 241, 0.5); color: var(--accent-primary);">
+                    Operato See
+                </span>
+                <h1 style="font-size: clamp(2.5rem, 4vw, 4rem); margin-bottom: 24px; line-height: 1.1;">
+                    The Eye of <br>
+                    <span class="text-gradient-accent">Future Operations</span>
+                </h1>
+                <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 48px; max-width: 600px;">
+                    Stop reacting to failures. Predict them. Operato See brings state-of-the-art Time-Series Forecasting
+                    and Computer Vision to your factory floor.
+                </p>
+            </div>
+        </div>
+
+        <!-- Abstract Background -->
+        <div
+            style="position: absolute; right: -10%; bottom: -20%; width: 700px; height: 700px; background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%); filter: blur(80px);">
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section" style="padding: var(--space-xl) 0;">
+        <div class="container">
+            <div class="bento-grid">
+                <div class="col-span-6 reveal">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Predictive Maintenance</h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🛠️</div>
+                            <div>
+                                <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Early Fault Detection</h3>
+                                <p style="color: var(--text-secondary);">Detect subtle vibration anomalies 2 weeks
+                                    before equipment failure using our Autoencoder models.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📉</div>
+                            <div>
+                                <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">RUL Prediction</h3>
+                                <p style="color: var(--text-secondary);">Accurately estimate Remaining Useful Life (RUL)
+                                    of critical assets to optimize maintenance schedules.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 reveal" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="glass-panel"
+                        style="padding: 2rem; width: 100%; height: 100%; min-height: 300px; display: flex; flex-direction: column; justify-content: center;">
+                        <!-- Chart Mockup -->
+                        <div
+                            style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.8rem;">
+                            <span>Vibration Level</span>
+                            <span>Time</span>
+                        </div>
+                        <div style="display: flex; align-items: flex-end; height: 150px; gap: 4px;">
+                            <div style="flex: 1; background: rgba(255,255,255,0.1); height: 20%; border-radius: 2px;">
+                            </div>
+                            <div style="flex: 1; background: rgba(255,255,255,0.1); height: 30%; border-radius: 2px;">
+                            </div>
+                            <div style="flex: 1; background: rgba(255,255,255,0.1); height: 25%; border-radius: 2px;">
+                            </div>
+                            <div style="flex: 1; background: rgba(255,255,255,0.1); height: 40%; border-radius: 2px;">
+                            </div>
+                            <div style="flex: 1; background: rgba(255,255,255,0.1); height: 35%; border-radius: 2px;">
+                            </div>
+                            <div style="flex: 1; background: rgba(255,255,255,0.1); height: 50%; border-radius: 2px;">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--error); height: 90%; border-radius: 2px; box-shadow: 0 0 10px var(--error);">
+                            </div>
+                            <div style="flex: 1; border-top: 2px dashed var(--text-secondary); height: 0;"></div>
+                        </div>
+                        <div style="margin-top: 1rem; text-align: center; color: var(--error); font-weight: 600;">
+                            ⚠️ Anomaly Detected (98% Confidence)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MLOps Pipeline -->
+    <section class="section"
+        style="padding: var(--space-xl) 0; background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-lg);">
+                <h2 class="reveal" style="font-size: 2.5rem;">End-to-End MLOps</h2>
+                <p class="reveal" style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto;">
+                    From model training to deployment, manage the entire lifecycle of your industrial AI models.
+                </p>
+            </div>
+
+            <div class="bento-grid">
+                <div class="col-span-4 glass-panel reveal" style="padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🧪</div>
+                    <h3>Experiment</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Track experiments with MLflow
+                        integration.</p>
+                </div>
+                <div class="col-span-4 glass-panel reveal"
+                    style="padding: 2rem; text-align: center; border-color: var(--accent-primary);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                    <h3>Deploy</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">One-click deployment to Edge devices.
+                    </p>
+                </div>
+                <div class="col-span-4 glass-panel reveal" style="padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👀</div>
+                    <h3>Monitor</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Real-time drift detection and
+                        retraining.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section class="section" style="padding: var(--space-xl) 0;">
+        <div class="container">
+            <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Technical
+                Specifications</h2>
+            <div class="glass-panel reveal" style="padding: 2rem;">
+                <table class="spec-table">
+                    <tbody>
+                        <tr>
+                            <th>Pre-trained Models</th>
+                            <td>Anomaly Detection, Forecasting, Object Detection, OCR</td>
+                        </tr>
+                        <tr>
+                            <th>Frameworks</th>
+                            <td>TensorFlow, PyTorch, Scikit-learn, ONNX</td>
+                        </tr>
+                        <tr>
+                            <th>Edge Support</th>
+                            <td>NVIDIA Jetson, Raspberry Pi, Intel NUC</td>
+                        </tr>
+                        <tr>
+                            <th>Integration</th>
+                            <td>REST API, gRPC, Kafka Consumer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding: var(--space-xl) 0; text-align: center;">
+        <div class="container">
+            <h2 class="reveal" style="font-size: 3rem; margin-bottom: 1.5rem;">Predict the Unpredictable.</h2>
+            <div class="reveal">
+                <a href="../index.html#contact" class="btn btn-primary">Start Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: var(--space-lg) 0; border-top: 1px solid var(--glass-border); margin-top: var(--space-xl);">
+        <div class="container">
+            <div style="text-align: center; color: var(--text-secondary); font-size: 0.9rem;">
+                &copy; 2026 Hatio, Lab. Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
