@@ -5,7 +5,9 @@
     --text-primary: #ffffff;
     --text-secondary: #a0a0b0;
     --accent-primary: #6366f1;
-    --accent-secondary: #8b5cf6;
+    /* Electric Indigo */
+    --accent-secondary: #10efee;
+    /* Cyan */
     --accent-glow: rgba(99, 102, 241, 0.5);
     --success: #22c55e;
     --warning: #f59e0b;
@@ -715,4 +717,20 @@ h6 {
 
 .glass-input:focus {
     border-color: var(--accent-primary);
+}
+
+/* Video Overlay Hover Effect */
+.video-overlay-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 70% 30%, rgba(99, 102, 241, 0.2) 0%, rgba(10, 10, 20, 0.8) 100%);
+    transition: opacity 0.5s ease;
+}
+
+.glass-panel:hover .video-overlay-wrapper {
+    opacity: 0;
 }
