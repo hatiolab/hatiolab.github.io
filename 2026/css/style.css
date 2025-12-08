@@ -6,7 +6,7 @@
     --text-secondary: #a0a0b0;
     --accent-primary: #6366f1;
     /* Electric Indigo */
-    --accent-secondary: #10efee;
+    --accent-secondary: #05bdfb;
     /* Cyan */
     --accent-glow: rgba(99, 102, 241, 0.5);
     --success: #22c55e;
@@ -733,4 +733,358 @@ h6 {
 
 .glass-panel:hover .video-overlay-wrapper {
     opacity: 0;
+}/* Impact Gallery (Horizontal Expansion) */
+.impact-gallery {
+    display: flex;
+    gap: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+.impact-card {
+    position: relative;
+    flex: 1;
+    border-radius: 24px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.impact-card.active {
+    flex: 3;
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.impact-card:hover:not(.active) {
+    border-color: var(--glass-highlight);
+}
+
+.card-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+.impact-card.active .card-canvas {
+    opacity: 0.8;
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 10, 15, 0.95), rgba(10, 10, 15, 0.4) 60%, rgba(10, 10, 15, 0.2));
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    width: 100%;
+    white-space: nowrap;
+    /* Prevent breaking initially */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-body {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    white-space: normal;
+    /* Allow wrap when expanded */
+    transform: translateY(20px);
+}
+
+.impact-card.active .card-body {
+    opacity: 1;
+    max-height: 500px;
+    /* Arbitrary large number */
+    transform: translateY(0);
+    margin-top: 10px;
+}
+
+.card-desc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.check {
+    color: var(--success);
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .impact-gallery {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .impact-card {
+        height: 100px;
+        /* Collapsed height */
+        flex: none;
+    }
+
+    .impact-card.active {
+        height: auto;
+        flex: none;
+        min-height: 500px;
+    }
+}/* Monitor Frame Style */
+.monitor-frame {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 0 10px;
+    /* Top, Right, Left padding for bezel */
+}
+
+/* Screen Area */
+.monitor-screen {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    background: #000;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* Slides */
+.visualizer-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.visualizer-slide.active {
+    opacity: 1;
+}
+
+/* Monitor Stand (Optional Polish) */
+.monitor-frame::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: #1a1a1a;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top: 1px solid #333;
+}/* Visualizer Holographic Stage */
+.visualizer-stage {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    perspective: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visualizer-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+/* Slides */
+.visualizer-slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9) translateY(20px);
+    max-width: 90%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 12px;
+    /* Glass-like border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.visualizer-slide.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) translateY(0);
+    filter: blur(0);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(99, 102, 241, 0.2);
+    /* Soft glow */
+    animation: float 6s ease-in-out infinite;
+    z-index: 10;
+}
+
+/* Floating Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1) translateY(0);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1) translateY(-15px);
+    }
+}
+
+/* Holographic Emitter Styling (Floor Glow) */
+.holo-emitter {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.4) 0%, transparent 70%);
+    filter: blur(15px);
+    opacity: 0.6;
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: translateX(-50%) scaleX(0.9);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: translateX(-50%) scaleX(1.1);
+    }
+}/* Lobby Showcase Style */
+.lobby-showcase {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* Allow it to be quite large */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.lobby-bg {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.lobby-screen {
+    position: absolute;
+    /* Estimated coordinates based on the reference image */
+    top: 7%;
+    left: 24%;
+    width: 48%;
+    height: 52%;
+    z-index: 10;
+    overflow: hidden;
+    /* Optional: subtle inner shadow to simulate depth */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.visualizer-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* Fill the screen area completely */
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.visualizer-slide.active {
+    opacity: 1;
+    /* Ensure the scale reset from previous holographic style doesn't interfere, though previous styles were scoped to visualizer-stage or just generic visualizer-slide? 
+       The previous css had .visualizer-slide with specific transforms. I need to override them. 
+    */
+    transform: none;
+    filter: none;
+    box-shadow: none;
+    animation: none;
+}
+
+/* Override potential leftover styles from holographic.css if they were applied to .visualizer-slide loosely */
+.lobby-screen .visualizer-slide {
+    transform: none !important;
+    animation: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+    max-height: none !important;
 }
