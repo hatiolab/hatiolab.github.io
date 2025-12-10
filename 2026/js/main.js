@@ -96,16 +96,22 @@ function initVisualizerSlideshow() {
 
     let currentIndex = 0;
 
-    // Auto-rotate every 3 seconds
-    setInterval(() => {
-        // Remove active from current
-        slides[currentIndex].classList.remove('active');
-
-        // Move to next
-        currentIndex = (currentIndex + 1) % slides.length;
-
-        // Add active to next
+    // Initial 3s delay before first image appears
+    setTimeout(() => {
+        // Show first image
         slides[currentIndex].classList.add('active');
+
+        // Start rotation interval
+        setInterval(() => {
+            // Remove active from current
+            slides[currentIndex].classList.remove('active');
+
+            // Move to next
+            currentIndex = (currentIndex + 1) % slides.length;
+
+            // Add active to next
+            slides[currentIndex].classList.add('active');
+        }, 3000);
     }, 3000);
 }
 
