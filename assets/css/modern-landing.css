@@ -1,23 +1,25 @@
 /*
-  Hatiolab Flagship Landing Page - Modern CSS Design System
-  Theme: Modern Dark Glassmorphism with Neon Accents
+  Hatiolab Corporate Portal - Modern CSS Design System
+  Incorporating Official HatioLab Brand Logo & Color Palette (Hatio Coral Red #e13b35 & Deep Tech Teal #0d8f86)
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
   --bg-dark: #0b0f17;
-  --bg-card: rgba(18, 26, 38, 0.75);
-  --bg-card-hover: rgba(26, 38, 56, 0.85);
-  --bg-wash: rgba(13, 143, 134, 0.08);
+  --bg-card: rgba(18, 26, 38, 0.78);
+  --bg-card-hover: rgba(26, 38, 56, 0.88);
+  --bg-wash: rgba(225, 59, 53, 0.08);
   --border-color: rgba(203, 213, 221, 0.12);
-  --border-active: rgba(43, 183, 172, 0.4);
+  --border-active: rgba(225, 59, 53, 0.4);
   
+  /* HatioLab Authentic Brand Colors */
+  --hatio-red: #e13b35;
+  --hatio-coral: #da706f;
   --primary-teal: #0d8f86;
   --accent-cyan: #2bb7ac;
   --accent-blue: #3b82f6;
   --accent-purple: #9b72cf;
-  --accent-amber: #d9a53c;
   
   --text-main: #f1f5f9;
   --text-muted: #94a3b8;
@@ -33,7 +35,7 @@
   --radius-pill: 9999px;
   
   --glass-blur: blur(16px);
-  --shadow-glow: 0 0 30px rgba(43, 183, 172, 0.15);
+  --shadow-glow: 0 0 30px rgba(225, 59, 53, 0.2);
   --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
@@ -53,8 +55,8 @@ html {
 
 body {
   overflow-x: hidden;
-  background: radial-gradient(circle at 50% 0%, rgba(13, 143, 134, 0.15), transparent 70%),
-              radial-gradient(circle at 80% 40%, rgba(59, 130, 246, 0.1), transparent 60%),
+  background: radial-gradient(circle at 50% 0%, rgba(225, 59, 53, 0.12), transparent 70%),
+              radial-gradient(circle at 80% 40%, rgba(13, 143, 134, 0.1), transparent 60%),
               var(--bg-dark);
   min-height: 100vh;
 }
@@ -67,13 +69,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #ffffff 0%, var(--accent-cyan) 50%, var(--accent-blue) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--hatio-coral) 50%, var(--accent-cyan) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-purple {
-  background: linear-gradient(135deg, #ffffff 0%, var(--accent-purple) 60%, var(--accent-cyan) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--accent-purple) 60%, var(--hatio-coral) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -83,7 +85,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--accent-cyan);
+  color: var(--hatio-coral);
   margin-bottom: 0.75rem;
   display: inline-block;
 }
@@ -106,10 +108,10 @@ h1, h2, h3, h4, h5 {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(11, 15, 23, 0.8);
+  background: rgba(11, 15, 23, 0.82);
   backdrop-filter: var(--glass-blur);
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
+  padding: 0.85rem 0;
   transition: all 0.3s ease;
 }
 
@@ -124,16 +126,12 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
-  color: var(--text-main);
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.4rem;
-  letter-spacing: -0.02em;
 }
 
-.brand-logo svg {
-  width: 32px;
-  height: 32px;
+.brand-logo img {
+  height: 38px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -152,7 +150,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-links a:hover {
-  color: var(--accent-cyan);
+  color: var(--hatio-coral);
 }
 
 .nav-actions {
@@ -183,13 +181,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .lang-btn.active {
-  background: var(--primary-teal);
+  background: var(--hatio-red);
   color: #fff;
-  box-shadow: 0 2px 10px rgba(13, 143, 134, 0.4);
+  box-shadow: 0 2px 10px rgba(225, 59, 53, 0.4);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-teal), var(--accent-blue));
+  background: linear-gradient(135deg, var(--hatio-red), var(--primary-teal));
   color: #fff;
   font-weight: 600;
   font-size: 0.9rem;
@@ -203,7 +201,7 @@ h1, h2, h3, h4, h5 {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(43, 183, 172, 0.35);
+  box-shadow: 0 8px 25px rgba(225, 59, 53, 0.38);
 }
 
 /* Hero Section */
@@ -218,9 +216,9 @@ h1, h2, h3, h4, h5 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(43, 183, 172, 0.1);
-  border: 1px solid rgba(43, 183, 172, 0.3);
-  color: var(--accent-cyan);
+  background: rgba(225, 59, 53, 0.1);
+  border: 1px solid rgba(225, 59, 53, 0.3);
+  color: var(--hatio-coral);
   padding: 0.4rem 1rem;
   border-radius: var(--radius-pill);
   font-size: 0.85rem;
@@ -303,8 +301,8 @@ h1, h2, h3, h4, h5 {
 .card-tag {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--accent-cyan);
-  background: rgba(43, 183, 172, 0.1);
+  color: var(--hatio-coral);
+  background: rgba(225, 59, 53, 0.12);
   padding: 2px 8px;
   border-radius: var(--radius-sm);
   display: inline-block;
@@ -323,7 +321,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.6;
 }
 
-/* Architecture Showcase Section */
+/* Metrics / Value Section */
 .arch-section {
   background: rgba(13, 20, 31, 0.6);
   border-y: 1px solid var(--border-color);
@@ -346,103 +344,21 @@ h1, h2, h3, h4, h5 {
   font-size: 1rem;
 }
 
-/* SVG 3-Plane Architecture Diagram Box */
-.arch-map-box {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  box-shadow: var(--shadow-card);
-}
-
-/* Metrics Grid */
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
 @media (max-width: 768px) {
-  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .metrics-grid { grid-template-columns: 1fr; }
 }
 
 .metric-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.metric-val {
-  font-family: var(--font-heading);
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--accent-cyan);
-  margin-bottom: 0.25rem;
-}
-
-.metric-lbl {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-/* Q&A Modal / Drawer Overlay */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(5, 8, 13, 0.85);
-  backdrop-filter: var(--glass-blur);
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.modal-overlay.open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-container {
-  background: #0f172a;
-  border: 1px solid var(--border-active);
-  border-radius: var(--radius-lg);
-  max-width: 860px;
-  width: 100%;
-  max-height: 85vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-}
-
-.modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 1.75rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.modal-body {
-  padding: 1.75rem;
-  overflow-y: auto;
-  font-size: 0.95rem;
-  color: var(--text-main);
-  line-height: 1.7;
-}
-
-.modal-close {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 1.5rem;
-  cursor: pointer;
+  padding: 2rem;
 }
 
 /* Footer */
@@ -456,7 +372,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
 }
@@ -491,7 +407,7 @@ footer {
 }
 
 .footer-col ul a:hover {
-  color: var(--accent-cyan);
+  color: var(--hatio-coral);
 }
 
 .footer-bottom {
